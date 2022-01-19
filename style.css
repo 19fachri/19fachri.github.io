@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: greenyellow;
+}
+
+td {
+  width: 20px;
+  height: 20px;
+}
+
+.p-h-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.m-h-10 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.shadow-box {
+  box-shadow: 1px 2px gray;
+}
+
+main {
+  display: grid;
+  grid-template-areas: 'left main main main right';
+}
+
+.left {
+  grid-area: 'left';
+  width: 20vw;
+}
+
+.main {
+  grid-area: 'main';
+  width: 60vw;
+  background-color: indianred;
+}
+
+.right {
+  grid-area: 'right';
+  width: 20vw;
+}
+
+button {
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+
+.text-white {
+  color: white;
+}
+
+.description {
+  background-color: white;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#modal-card {
+  width: 30vw;
+  height: 30vh;
+  background-color: white;
+  margin: 35vh 35vw;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
