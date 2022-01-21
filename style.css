@@ -75,7 +75,7 @@ button {
   border-radius: 10px;
 }
 
-#modal {
+.modal {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -85,12 +85,16 @@ button {
   display: none;
 }
 
-#modal-card {
-  width: 30vw;
-  height: 30vh;
+.modal-card {
+  /* width: 30vw;
+  height: 30vh; */
   background-color: white;
   margin: 35vh 35vw;
   border-radius: 20px;
   padding: 20px;
   text-align: center;
+}
+
+button {
+  margin: 20px 10px;
 }

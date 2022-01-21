@@ -143,7 +143,7 @@ document.onkeydown = function (event) {
   }
 }
 
-let scoreView = document.getElementById('score')
+let scoreView = document.getElementById('scoreValue')
 
 const start = () => {
   boardData = createBoardData(boardData)
@@ -156,7 +156,7 @@ const start = () => {
 const play = () => {
   const start = setInterval(() => {
     if (isHitWall(snake) || isHitBody(snake)) {
-      document.getElementById('modal').style.display = 'block'
+      document.getElementById('score').style.display = 'block'
       document.getElementById('score-result').innerHTML = score
       clearInterval(start)
     }
@@ -164,7 +164,7 @@ const play = () => {
       setFood(boardData, food)
       snake = snakeGrowing(snake)
       score += 10
-      scoreView.innerHTML = score
+      scoreView.innerHTML = `score : ${score}`
     }
     [boardData, snake] = updateSnake(boardData, snake)
     updateBoard(boardData)
@@ -172,7 +172,7 @@ const play = () => {
 }
 
 const reset = () => {
-  document.getElementById('modal').style.display = 'none'
+  document.getElementById('score').style.display = 'none'
   score = 0
   snake.positions = [
     {
